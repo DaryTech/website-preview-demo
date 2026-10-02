@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client preview demo | Dary Technologies</title>
+  <meta name="description" content="A sample website for the Dary Technologies GitHub to Vercel tutorial.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root { color-scheme: light; --paper:#e6eaf4; --ink:#101a3d; --red:#c42a22; --muted:#3b4468; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial, sans-serif; }
+    a { color:inherit; text-underline-offset:5px; }
+    a:focus-visible { outline:3px solid var(--red); outline-offset:6px; }
+    header { max-width:1240px; margin:auto; padding:32px 40px; display:flex; justify-content:space-between; gap:24px; align-items:center; }
+    header a { font-size:18px; }
+    .brand { font-size:21px; font-weight:700; text-decoration:none; }
+    main { max-width:1240px; margin:auto; padding:68px 40px 90px; }
+    .intro { font-size:20px; font-weight:700; color:var(--red); margin:0 0 26px; }
+    h1 { max-width:1000px; font-size:clamp(52px,7.7vw,100px); line-height:1.02; letter-spacing:-.055em; margin:0 0 32px; }
+    .lead { font-size:clamp(21px,2.3vw,28px); line-height:1.5; max-width:720px; color:var(--muted); }
+    .action { display:inline-block; margin-top:22px; background:var(--ink); color:white; padding:19px 28px; border-radius:8px; font-size:20px; text-decoration:none; }
+    section { padding-top:110px; }
+    h2 { font-size:36px; letter-spacing:-.025em; margin:0 0 30px; }
+    .checks { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    article { border-top:2px solid var(--red); padding:25px 0 0; }
+    h3 { font-size:24px; margin:0 0 13px; }
+    article p { color:var(--muted); font-size:20px; line-height:1.6; max-width:460px; margin:0; }
+    footer { padding:26px 40px; border-top:1px solid #bac3e1; max-width:1240px; margin:auto; color:var(--muted); line-height:1.6; }
+    @media(max-width:640px) { header,main,footer { padding-left:24px; padding-right:24px; } header { align-items:flex-start; } header a { font-size:15px; } .brand { font-size:18px; } main { padding-top:42px; } .checks { grid-template-columns:1fr; gap:32px; } section { padding-top:75px; } }
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="#">Dary Technologies</a><a href="#review">Review this demo</a></header>
+  <main>
+    <p class="intro">Client preview demo</p>
+    <h1>Your website.<br>Ready to share.</h1>
+    <p class="lead">A simple project for learning how to publish a website with GitHub and Vercel. Open the link, explore the page, and see how it looks on your phone.</p>
+    <a class="action" href="#review">Explore the demo</a>
+    <section id="review" aria-labelledby="review-title">
+      <h2>A working page to review together</h2>
+      <div class="checks">
+        <article><h3>Check the layout</h3><p>Resize your browser or open the same address on a phone. The page adjusts to the space available.</p></article>
+        <article><h3>Try the links</h3><p>The navigation and main button bring you here. These small checks help you confirm the deployment works.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>Sample project for the Dary Technologies lesson on publishing a website with GitHub and Vercel. Built by <a href="https://darytechnologies.com">Dary Technologies</a>.</footer>
+</body>
+</html>
